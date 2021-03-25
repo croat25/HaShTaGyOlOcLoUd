@@ -1,0 +1,10 @@
+config:
+  target: https://my.microservice.internal
+  processor: "./index.js"
+  phases:
+    - duration: 1
+      arrivalRate: 1
+scenarios:
+  - flow:
+      - function: "helloWorld"
+      - think: 6
